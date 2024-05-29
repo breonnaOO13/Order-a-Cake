@@ -1,0 +1,23 @@
+/**make backgroud color white**/
+body {
+  background-color:white;
+}
+
+/**to format the buttons and text **/
+.format{
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+
+/**for the display of chosen items at the top**/
+.navbar1{
+  position: fixed;
+  top: 0;
+  background:white;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 180px;
+}
