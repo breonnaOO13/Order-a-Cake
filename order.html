@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  
+  <body>
+    
+
+  <nav class="navbar1">
+
+<!-- for the bar at the top for seeing selected options-->
+    <h4>
+      <!--the catergory of the option-->
+        Cake Flavor:
+      <!--blank text that will chnage to selected option once pressed using cake.js -->  
+        <span class="flavor">   </span>
+    </h4>
+      
+    <h4>
+        Layers:
+        <span class="layer">   </span>
+    </h4>
+      
+    <h4>
+        Frosting?:
+        <span class="frostingYN">   </span>
+    </h4>
+      
+    <h4>
+        <span class="yes">Frosting Color:</span>
+        <span class="frosting">   </span>
+    </h4>
+      
+    <h4>
+        Price: $
+        <span class="price">  </span>
+    </h4>
+
+  </nav>
+  
+
+  
+    <!-- title of app made as header and centered on page -->
+    <div class = 'Format' id = "top" > 
+      <center><h1> Order a Cake! </h1></center>
+    </div>
+
+    
+    <br><br><br><br><br><br>
+    
+    <center><h3>What Flavor Cake Would You Like?</h3></center>
+   
+    <!--Each option with own button with image and price--> 
+    <div class = 'Format'>
+      <center>
+        <button><img src="VanillaOneBlank.png" height ="150" width="170" id = "vanillaCake"></button>
+        <button><img src="ChocoOneBlank.png" height ="150" width="170" id = "chocolateCake"></button>
+        <button><img src="StrawOneBlank.png" height ="150" width="170" id = "strawberryCake"></button>
+      </center>
+    </div>
+    
+    <center><h3>How Many Layers Would You Like?</h3></center>
+    
+    <div class = 'Format'>
+      <center>
+        <button><img src="OneLayerBlank.png" height ="150" width="170" id = "oneLayer" class="button"></button>
+        <button><img src="TwoLayerBlank.png" height ="150" width="170" id = "twoLayers"></button>
+        <button><img src="ThreeLayerBlank.png" height ="150" width="170" id = "threeLayers"></button>
+      </center>
+    </div>
+    
+    <center><h3>Would You Like Frosting For Your Cake?</h3></center>
+    
+    <div class = 'Format'>
+      <center>
+        <button><img src="FrostingBlank.png" height ="150" width="170" id = "yesFrosting"></button>
+        <button><img src="NoFrostingBlank.png" height ="150" width="170" id = "noFrosting"></button>
+      </center>
+    </div>
+    
+    
+    <h3>
+        <center><span class="frostingYes">What Color Frosting Would You Like?</span></center>
+    </h3>
+   
+    
+    <div class = 'Format'>
+      <center>
+        <button><img src="RedFrostBlank.png" height ="150" width="170" id = "red"></button>
+        <button><img src="OrangeFrostBlank.png" height ="150" width="170" id = "orange"></button>
+        <button><img src="YellowFrostBlank.png" height ="150" width="170" id = "yellow"></button>
+        <button><img src="GreenFrostBlank.png" height ="150" width="170" id = "green"></button>
+        <button><img src="BlueFrostBlank.png" height ="150" width="170" id = "blue"></button>
+        <button><img src="PurpleFrostBlank.png" height ="150" width="170" id = "purple"></button>
+      </center>
+    </div>
+    <br><br><br>
+    
+    <!--when place order pressed, it will take the user to the bottom of the page-->
+    <center><button><a href = "#end" id = "endDone"> Place Order </a></button></center>
+    
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+    
+    <div class = 'Format' id = "end" >    
+      <h4>
+        <center> Your final price is: $
+        <span class="finalPriceDone"> </span></center>
+      </h4>
+      
+      <center><h4>Here is your cake! Your purchase has been completed!</h4></center>
+      
+      <!--image of error in case user did not choose all needed options
+      if user chooses all needed options, the image will change to the correct cake order-->
+      <center><img src="error.png" id = "cake"></center>
+    
+    </div>
+      <h4>
+        <center>
+        <span class="finalPriceDone">Would you like to order another cake?</span></center>
+      </h4>
+      
+      <center><button><a href = "#top" id = "yes">Yes</a></button></center>
+      <center><button><a href = "#niceDay" id = "no">No</a></button></center>
+      
+      <div class = 'Format' id = "niceDay" >
+        <h1>
+          <center>
+          <span class="finish"> </span></center>
+        </h1>
+      </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <script type="text/javascript" src="cake.js"></script>
+  </body>
+</html>
